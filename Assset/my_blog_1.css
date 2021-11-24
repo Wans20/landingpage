@@ -1,5 +1,5 @@
 body{
-    background-color:gray;
+    background-color:rgb(95, 95, 95);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 video {
@@ -10,11 +10,15 @@ video {
 }
 p{
     font-family:'Times New Roman', Times, serif;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 h1{
     background-color:black;
     padding-left: 20px;
     text-align-last: center;
+}
+nav{
+    text-decoration: cornsilk;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 

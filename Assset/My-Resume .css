@@ -1,0 +1,47 @@
+html,
+body {
+  font-family:'Times New Roman', Times, serif;
+  background-color: rgb(0, 0, 59);
+  line-height: 2;
+  padding-bottom: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container{
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.colutama {
+  flex: 3; 
+  order: 2; 
+  padding-right: 20px;
+  background-color: cyan;
+}
+.sidebar1 {
+  flex: 1;
+  order: 1px;;
+  background-color:rgb(152, 217, 255);
+}
+img{
+  box-sizing: 100px; 
+  max-block-size: 6cm;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 0px;
+}
+h3{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav{
+  text-decoration: cornsilk;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}

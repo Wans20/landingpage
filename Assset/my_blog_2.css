@@ -1,6 +1,19 @@
 video {
-    position:relative; right: 0; bottom: 0;
+    position:relative; right:0; bottom: 0;
     min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;   
+    width: 100px;; height: auto; z-index: -100;   
     background-size: cover;
+}
+body{
+    background-color:gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    text-decoration: cornsilk;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h1{
+    background-color:black;
+    padding-left: 20px;
+    text-align-last: center;
 }
