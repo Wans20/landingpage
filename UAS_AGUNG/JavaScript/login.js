@@ -1,43 +1,31 @@
-function openpage(page) {
-  document.getElementById("kontenview").innerHTML = '<object type="text/html" data="' + page + '"  width="1000" height="1000"></object>';
-}
-
-if (document.getElementById("cekLogin")) {
-  document.getElementById("cekLogin").innerHTML = "<b>FORM LOGIN</b>";
-  document.getElementsByName("username")[0].value = "";
-}
-const username = "admin";
-const password = "123";
-
-function ceklogin() {
-  //varibel untuk menampung data dari form login
-  let userlogin = document.getElementById("username").value;
-  let passlogin = document.getElementById("password").value;
-  if (userlogin === "" || userlogin === null) {
-    //alert("Username wajib diisi!!");
-    message("alert", "Username wajib diisi!!");
-  } else if (passlogin === "" || passlogin === null) {
-    //alert("Password wajib diisi!!");
-    message("alert", "Password wajib diisi!!");
-  } else {
-    if (userlogin === username && passlogin === password) {
-      //   alert("Login Berhasil");
-      message("aler", "Login Berhasil");
-      window.location.href = "index.html"; //ini untuk buka atau link ke halaman index.html
-    } else {
-      message("alert", "Username dan Password tidak sesuai!!");
-    }
-  }
-}
-
 function message(id, text) {
-  document.getElementById(id).innerHTML = "<b>" + text + "</b>";
-  document.getElementById(id).style.display = "inline";
+    document.getElementById(id).innerHTML = text ;
+    document.getElementById(id).style.display = "inline";
 }
-// cara 1
-// document.getElementById("loginPage").onload=function(){
-//   alert("Selamat Datang Guys !!!  Login Dulu Yaaa!!!");
-// };
-function welcome(){
-  alert("Selamat Datang Guys !!! Login Dulu Yaaa!!!");
+
+const usernama="admin";
+const pass=123;
+function LoginCek(){
+    let username=document.getElementById("user").value;
+    let password=document.getElementById("pass").value;
+    if(username===""||username===null){
+        message("alert","Please Input Username First !!!");
+    }else if(password==="" || password===null){
+        message("alert","Please,Don't Forget To Enter Your Password Too !!!");
+    }else{
+        if(username==usernama && password==pass){
+            alert ("login success welcome back BOSS !!");
+            window.location.href="index.html";
+        }   else if(username==usernama != password==pass) {
+            document.getElementById("user").value=null;
+            document.getElementById("pass").value=null;
+            alert("password dan username tidak sama");
+        } else if (username!=usernama){
+            document.getElementById("user").value=null;
+            alert ("username tidak sama");
+        } else {
+            document.getElementById("pass").value=null;
+            alert ("password tidak sama");
+        } 
+    }
 }
