@@ -1,5 +1,3 @@
 let jenisBuku=[{buku:"English"},{buku:"Kitab"},{buku:"Novel"}];
-let namaBuku=document.getElementById("menu");
-jenisBuku.forEach((barang)=>{
-    namaBuku.innerHTML+="<ul>"+"<li>"+barang.buku+"</li>"+"</ul>";
-});
+let NamaBuku=document.getElementById("MenuBuku");
+jenisBuku.forEach((jenis) => { NamaBuku.innerHTML+="<ul>" + "<li>" + jenis.buku + "</li>" + "</ul>"});
