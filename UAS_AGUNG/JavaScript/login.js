@@ -16,20 +16,20 @@ function LoginCek() {
         message("alert","Please,Don't Forget To Enter Your Password Too !!!");
     }else{
         if(username==usernama && password==pass) { 
-            alert ("login success welcome back BOSS !!");
+            alert ("LOGIN SUCCESS, WELCOME TO MY STORE");
             window.location.href="index.html";
         } else if(username != usernama && password != pass) {
             // console.log("isi username", username);
             // console.log("isi password", password);
             document.getElementById("user").value=null;
             document.getElementById("pass").value=null;
-            alert("password dan username tidak sama");
+            alert("Password dan Username Tidak Sama");
         } else if (username != usernama){
             document.getElementById("user").value=null;
-            alert ("username tidak sama");
+            alert ("Username Tidak Sama");
         } else {
             document.getElementById("pass").value=null;
-            alert ("password tidak sama");
+            alert ("Password Tidak Sama");
         } 
     }
 }
